@@ -8,6 +8,9 @@ import Details from "./components/Details";
 import Cart from "./components/Cart/Cart";
 import Default from "./components/Default";
 import Modal from "./components/Modal";
+import Register from "./components/Register";
+import Login from "./components/Login";
+import Checkout from "./components/Checkout";
 
 class App extends Component {
   render() {
@@ -19,6 +22,9 @@ class App extends Component {
           <Route path="/details" element={<Details />} />
           <Route exact path="/cart" element={<Cart />} />
           <Route path="/default" element={<Default />} />
+          <Route path="/register" element={<Register />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/checkout" element={<Checkout />} />
         </Routes>
         <Modal />
       </React.Fragment>

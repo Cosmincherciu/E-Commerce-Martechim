@@ -7,7 +7,7 @@ export default function CartTotals({ value }) {
     <React.Fragment>
       <div className="container">
         <div className="row">
-          <div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right">
+          <div className="ml-auto">
             <Link to="/">
               <button
                 className="btn btn-outline-danger text-uppercase mb-3 px-5"
@@ -18,15 +18,15 @@ export default function CartTotals({ value }) {
               </button>
             </Link>
             <h5>
-              <span className="text-title">Cost Produse : </span>
+              <span className="text-uppercase">Cost Produse : </span>
               <strong>{cartSubTotal} Lei</strong>
             </h5>
             <h5>
-              <span className="text-title">Cost Livrare : </span>
+              <span className="text-uppercase">Cost Livrare : </span>
               <strong>{cartTax} Lei</strong>
             </h5>
             <h5>
-              <span className="text-title">Total : </span>
+              <span className="text-uppercase">Total : </span>
               <strong>{cartTotal} Lei</strong>
             </h5>
           </div>
